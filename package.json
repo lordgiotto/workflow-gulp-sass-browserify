@@ -1,0 +1,47 @@
+{
+  "name": "workflow-gulp-sass-browsefify",
+  "version": "1.0.0",
+  "description": "Simple workflow with gulp, sass and browserify",
+  "main": "index.js",
+  "author": "Lorenzo Zottar <lordgiotto@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lordgiotto/workflow-gulp-sass-browserify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lordgiotto/workflow-gulp-sass-browserify/issues"
+  },
+  "homepage": "https://github.com/lordgiotto/workflow-gulp-sass-browserify",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim",
+      "brfs"
+    ]
+  },
+  "browser": {},
+  "browserify-shim": {},
+  "devDependencies": {
+    "brfs": "^1.4.3",
+    "browserify": "^13.0.0",
+    "browserify-shim": "^3.8.12",
+    "del": "^2.2.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.2",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-if": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "node-notifier": "^4.5.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  }
+}
