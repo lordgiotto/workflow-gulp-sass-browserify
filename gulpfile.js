@@ -108,7 +108,7 @@ function buildCss() {
 }
 
 function watchCss() {
-	watch( path.join(filePaths.src.css, '**/*.scss'), ['build:css'])
+	watch( path.join(filePaths.src.css, '**/*.scss'), buildCss)
 }
 
 gulp.task('build:css', buildCss);
